@@ -1,13 +1,96 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background: #f1f5f8;
+}
+
+main {
+    width: 90vw;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+p {
+    padding: 5px 20px;
+}
+
+.tour-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px
+}
+
+.tour-info p {
+    background: #ebf7ff;
+    color: blue;
+    border-radius: 5px;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.title:before {
+    content: "";
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: lightblue;
+
+}
+
+.single-tour {
+    background: #fff;
+    margin-bottom: 40px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    color: red;
+    border: 1px solid red;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.readMore {
+    cursor: pointer;
+    color: blue;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+section div {
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
 }
